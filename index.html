@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat Support</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/chatbot.js"></script>
+</head>
+<body>
+
+  <section class="main-back">
+    <button class="chat-toggle" onclick="toggleChat()">
+      <img src="./images/logo-du.svg" /> Questions? Ask me!
+    </button>
+
+    <div class="chat-overlay" id="chatOverlay">
+      <div class="chat-header">
+        Chat Support
+        <span class="close-btn" onclick="toggleChat()">×</span>
+      </div>
+      <div class="chat-messages" id="chatMessages">
+        <div class="bot">Hello! How Can I Help You Today?</div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Type Your Message" />
+        <button onclick="sendMessage()">
+          <svg viewBox="0 0 24 24">
+            <path d="M2 21l21-9L2 3v7l15 2-15 2v7z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+ 
+
+</body>
+</html>
